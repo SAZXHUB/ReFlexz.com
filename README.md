@@ -1,3 +1,4 @@
+
 <html lang="th">
 <head>
     <meta charset="UTF-8">
@@ -48,7 +49,7 @@
         }
 
         .link {
-            display: block;
+            display: inline-block;
             background: linear-gradient(45deg, #ff0099, #493240, #1f4037, #00c6ff, #0072ff, #4a00e0, #8e2de2);
             background-size: 400% 400%;
             animation: gradientButton 10s ease infinite;
@@ -84,6 +85,21 @@
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             margin: 10px 0;
         }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            margin-bottom: 20px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
@@ -91,6 +107,14 @@
         <img src='https://i.postimg.cc/HLWLxy6R/Screenshot-2024-0616-191819.jpg' border='0' alt=''/>
         <h1>ReFlexz</h1>
         <p>ช่องทางทั้งหมด😘 อย่าลืมชื้อเสื้อไม่งั้นจะตามไปบ้าน😡</p>
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/9brTNq_n6SA?autoplay=1&controls=0&loop=1&modestbranding=1&rel=0&playsinline=1" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+            </iframe>
+        </div>
         <a class="link" href="https://youtube.com/@reflexzsama?si=lCTcXWeGi0Qk2ZKq"><img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube">ช่องยูทูป</a>
         <a class="link" href="https://www.roblox.com/th/groups/34202684/KaKGrean-Group#!/about"><img src="https://img.icons8.com/ios-filled/50/ffffff/roblox.png" alt="Roblox Group">กลุ่มขายเสื้อ</a>
         <a class="link" href="https://www.roblox.com/th/users/3616268238/profile"><img src="https://img.icons8.com/ios-filled/50/ffffff/roblox.png" alt="Roblox Profile">user หลัก</a>
